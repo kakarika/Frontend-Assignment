@@ -21,13 +21,15 @@ nav {
   height: 60px;
   color: white;
 }
-.logo__nav ul {
+
+ul {
   padding: 0;
   margin: 0;
   display: flex;
   gap: 3px;
 }
-.logo__nav li {
+
+li {
   flex: 33.33%;
   line-height: 50px;
   text-align: center;
