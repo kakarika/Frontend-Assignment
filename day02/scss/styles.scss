@@ -10,9 +10,8 @@ body {
 }
 
 nav{
-    position: fixed;
-    top: 60px;
-    width: 100%;
+    position: sticky;
+    top: 0;
     z-index: 10;
 }
 
@@ -25,20 +24,15 @@ nav{
         width: 100%;
         height: 60px;
         color: white;
-        position: fixed;
-        top: 0;
-        z-index: 11;
     }
     &__nav ul{
         padding: 0;
         margin: 0;
         display: flex;
         gap: 3px;
-        height: 50px;
     }
     &__nav li{
         flex: 33.33%;
-        height: 100%;
         line-height: 50px;
         text-align: center;
         list-style-type: none;
@@ -57,46 +51,42 @@ article{
     gap: 30px;
 }
 
-.card{
-    flex: 33.33%;
-    // overflow: hidden;
-}
+// .card{
+//     // flex: 33.33%;
+// }
 
 .card{
     text-align: center;
+    flex: 33.33%;
     &__img{
         height: 300px;
-        flex: 33.33%;
-        transition: transform 0.5s ease;
+        overflow: hidden;
+        margin-bottom: 10px;
         img{
             width: 100%;
             height: 100%;
             object-fit: cover;
             z-index: 0;
+            transition: transform 0.5s ease;
         }
     }
-    &__btn button{
+    &__btn {
         width: 96%;
-        height: 35px;
+        line-height: 35px;
         transform: skewX(-30deg);
         border: 1.5px solid $btnColor;
         box-shadow: 5px 4px 5px $btnColor;
         background-color: white;
         transition: all 0.7s ease;
-    }
-    &__transform{
-        height: 300px;
-        overflow: hidden;
-        margin-bottom: 10px;
-    }
+    } 
 }
 
 .card{
-    &__img:hover{
+    &__img a:hover img{
         transform: scale(1.1);
     }
 
-    &__btn button:hover{
+    &__btn:hover{
         background-color: $btnColor;
         color: white;
     }
