@@ -1,0 +1,12 @@
+.explore{
+    &__inner{
+        overflow: hidden;
+        .background-img{
+        position: absolute;
+        background: url(../img/explore/Shapes.png);
+        background-position: center;
+        height: 1885px;
+        width: 100%;
+    }
+    }
+}
