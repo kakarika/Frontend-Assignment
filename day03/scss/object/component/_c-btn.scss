@@ -23,6 +23,33 @@
         border-radius: 25px;
         width: 205px;
     }
+    &--readmore{
+        background-color: #8d8d8d1a;
+        border-radius: 25px;
+        margin: 0 auto;
+
+        a{
+            color: #8d8d8d;
+        }
+    }
+    &--viewall{
+        border: 1px solid #e76f51;
+        border-radius: 25px;
+        margin: 0 auto;
+        width: 205px;
+
+        a{
+            color: #e76f51;
+            font-size: 18px;
+        }
+
+        &:hover{
+            background-color: #e76f51;
+            a{
+                color: $white;
+            }
+        }
+    }
 }
 
 

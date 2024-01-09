@@ -1,12 +1,33 @@
 .explore{
     &__inner{
         overflow: hidden;
+        height: 1861px;
+        width: 1400px;
+        margin: 0 auto;
         .background-img{
         position: absolute;
-        background: url(../img/explore/Shapes.png);
+        background: url(../img/explore/Shapes.png) no-repeat;
         background-position: center;
+        background-size: cover;
         height: 1885px;
         width: 100%;
+        margin-top: -500px;
     }
+    }
+    &__title-img{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 39px;
+    }
+    &__title{
+        width: 408px;
+        height: 107px;
+        text-align: center;
+        margin: 0 auto;
+
+        h2{
+            font-family: $fontArchivo;
+            font-size: 40px;
+        }
     }
 }

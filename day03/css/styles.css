@@ -111,6 +111,30 @@ a {
   border-radius: 25px;
   width: 205px;
 }
+.c-btn--readmore {
+  background-color: rgba(141, 141, 141, 0.1019607843);
+  border-radius: 25px;
+  margin: 0 auto;
+}
+.c-btn--readmore a {
+  color: #8d8d8d;
+}
+.c-btn--viewall {
+  border: 1px solid #e76f51;
+  border-radius: 25px;
+  margin: 0 auto;
+  width: 205px;
+}
+.c-btn--viewall a {
+  color: #e76f51;
+  font-size: 18px;
+}
+.c-btn--viewall:hover {
+  background-color: #e76f51;
+}
+.c-btn--viewall:hover a {
+  color: #fff;
+}
 
 .p-card-bloc {
   width: 260px;
@@ -124,10 +148,8 @@ a {
 }
 .p-card-bloc__inner {
   padding: 50px 30px;
-  height: 298.8px;
 }
 .p-card-bloc__img {
-  height: 86.8px;
   margin-bottom: 20px;
 }
 .p-card-bloc__img img {
@@ -189,11 +211,88 @@ a {
 
 .explore__inner {
   overflow: hidden;
+  height: 1861px;
+  width: 1400px;
+  margin: 0 auto;
 }
 .explore__inner .background-img {
   position: absolute;
-  background: url(../img/explore/Shapes.png);
+  background: url(../img/explore/Shapes.png) no-repeat;
   background-position: center;
+  background-size: cover;
   height: 1885px;
   width: 100%;
+  margin-top: -500px;
+}
+.explore__title-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 39px;
+}
+.explore__title {
+  width: 408px;
+  height: 107px;
+  text-align: center;
+  margin: 0 auto;
+}
+.explore__title h2 {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 40px;
+}
+
+.activity {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.activity__card {
+  width: 327.5px;
+  height: 465px;
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+}
+.activity__card__imgbox {
+  width: 247px;
+  height: 180px;
+  margin: 0 auto;
+  position: relative;
+}
+.activity__card__imgbox img {
+  width: 100%;
+}
+.activity__card__imgbox .favourite {
+  background: url("../img/explore/fav_off.png") no-repeat top center;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: white;
+  border-radius: 10px;
+}
+.activity__card__imgbox .favourite:hover {
+  background-image: url("../img/explore/fav_on.png");
+}
+.activity__card__txtbox {
+  width: 197px;
+  height: 162px;
+  margin: 0 auto;
+}
+.activity__card__txtbox p {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+.activity__card__price {
+  width: 145px;
+  height: 50px;
+  background-color: white;
+  border-radius: 14px;
+  position: relative;
+  top: -45px;
+  margin: 0 auto;
+}
+.activity__card__price p {
+  line-height: 50px;
 }/*# sourceMappingURL=styles.css.map */

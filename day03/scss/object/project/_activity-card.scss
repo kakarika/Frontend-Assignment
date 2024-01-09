@@ -1,0 +1,56 @@
+.activity{
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    &__card{
+        width: 327.5px;
+        height: 465px;
+        background-color: white;
+        padding: 40px;
+        border-radius: 20px;
+        &__imgbox{
+                width: 247px;
+                height: 180px;
+                margin: 0 auto;
+                position: relative;
+            img{
+                width: 100%;
+            }
+            .favourite{
+                background: url('../img/explore/fav_off.png') no-repeat top center;
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                background-color: white;
+                border-radius: 10px;
+                &:hover{
+                    background-image: url('../img/explore/fav_on.png');
+                }
+            }
+        }
+        &__txtbox{
+            width: 197px;
+            height: 162px;
+            margin: 0 auto;
+            p{
+                font-size: 16px;
+                margin-bottom: 25px;
+            }
+        }
+        &__price{
+            width: 145px;
+            height: 50px;
+            background-color: white;
+            border-radius: 14px;
+            position: relative;
+            top: -45px;
+            margin: 0 auto;
+            p{
+                line-height: 50px;
+            }
+        }
+    }
+}
