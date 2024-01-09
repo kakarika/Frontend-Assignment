@@ -94,37 +94,47 @@ article{
 .txt-box{
     width: 70%;
     margin: 0 auto;
-    &__show{
+    &__header{
+        cursor: pointer;
         background-color: rgb(255, 71, 102);
         height: 60px;
         line-height: 65px;
         width: 100%;
         position: relative;
         color: white;
-        &::before{
-            content: "";
-            position: absolute;
-            width: 13px;
-            height: 1.6px;
-            background-color: white;
-            right: 40px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
         &::after{
-            content: "";
+            content: "+";
             position: absolute;
-            width: 2px;
-            height: 13px;
-            background-color: white;
-            right: 46.5px;
-            top: 50%;
-            transform: translate(50%, -50%);
+            top: 0;
+            right: 30px;
+            font-size: 30px;
         }
+    }
+    &__para{
+        visibility: hidden;
+        height: 0;
+        opacity: 0;
+    }
+    &.show{
+        .txt-box__para {
+            opacity: 1;
+            height: auto;
+            visibility: visible;
+             transition: all 1s ease;
+        }
+            
+
+        .txt-box__header {
+            &:after {
+                content: '-';
+                font-size: 50px;
+            }
+        }
+
     }
 }
 
-.txt-box__show h2{
+.txt-box__header h2{
     margin-left: 20px;
 }
 

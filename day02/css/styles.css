@@ -87,7 +87,8 @@ article {
   width: 70%;
   margin: 0 auto;
 }
-.txt-box__show {
+.txt-box__header {
+  cursor: pointer;
   background-color: rgb(255, 71, 102);
   height: 60px;
   line-height: 65px;
@@ -95,28 +96,30 @@ article {
   position: relative;
   color: white;
 }
-.txt-box__show::before {
-  content: "";
+.txt-box__header::after {
+  content: "+";
   position: absolute;
-  width: 13px;
-  height: 1.6px;
-  background-color: white;
-  right: 40px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
+  right: 30px;
+  font-size: 30px;
 }
-.txt-box__show::after {
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 13px;
-  background-color: white;
-  right: 46.5px;
-  top: 50%;
-  transform: translate(50%, -50%);
+.txt-box__para {
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+}
+.txt-box.show .txt-box__para {
+  opacity: 1;
+  height: auto;
+  visibility: visible;
+  transition: all 1s ease;
+}
+.txt-box.show .txt-box__header:after {
+  content: "-";
+  font-size: 50px;
 }
 
-.txt-box__show h2 {
+.txt-box__header h2 {
   margin-left: 20px;
 }
 
